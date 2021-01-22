@@ -1,0 +1,98 @@
+body {
+  padding: 50px;
+}
+
+/* dimensioni colonne vuote, da cancellare quando riempite  */
+
+/* div[class^="colonna-"] {
+  height: 100px;
+} */
+
+/* clearing */
+
+.riga::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin: 20px 0px;
+}
+
+/* impostazioni generali colonne */
+
+[class^="colonna-"], .background {
+  float: left;
+}
+
+.colonna-100 {
+  width: 100%;
+}
+
+.colonna-20 {
+  width: 20%;
+}
+
+.colonna-56 {
+  width: 56%;
+}
+
+/* impostazioni colori */
+
+.pink {
+  background-color: pink;
+  height: 500px;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.viola {
+  background-color: purple;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.background {
+  background-color: cyan;
+  width: 100%;
+  height: 400px;
+}
+
+
+/* impostazioni dimensioni */
+
+.head > .colonna-100 {
+  height: 100px;
+}
+
+.main-1 > .colonna-100 {
+  height: 400px;
+}
+
+.main-2 > .colonna-100 {
+  height: 60px;
+}
+
+.main-2 > .colonna-20, .main-2 > .colonna-56 {
+  height: 400px;
+}
+
+.foot > .colonna-100 {
+  height: 40px;
+}
+
+/* padding */
+
+.colonna-20.blue.left {
+  padding: 4% 2% 0 0;
+}
+
+.colonna-20.blue.right {
+  padding: 4% 0 0 2%;
+}
+
+.colonna-56 {
+  padding-top: 4%;
+}
